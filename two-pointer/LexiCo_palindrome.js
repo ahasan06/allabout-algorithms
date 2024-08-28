@@ -22,7 +22,7 @@ var makeSmallestPalindrome = function (s) {
 
     return chars.join('')
     
-
+  
 
 };
 
