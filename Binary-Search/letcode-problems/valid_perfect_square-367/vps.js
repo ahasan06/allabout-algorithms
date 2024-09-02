@@ -1,23 +1,30 @@
+
+// need to discuss more
+
 var isPerfectSquare = function (num) {
-    if (num === 1) {
-        return true
-    }
+  
     let start = 1
     let end = num
 
     while (start <= end) {
         let mid = Math.floor((start + end) / 2)
         let square = mid * mid
-        console.log(square);
-        if (square === mid) {
+        if (square === num) {
             return true
         }
         else if (square > num) {
             end = mid - 1
+            console.log(end);
+            
         }
-        return false
+        else{
+            start = mid + 1
+   
+            
+        }
     }
-
+    return false
 };
-const num = 9
-console.log(isPerfectSquare(num));
+
+
+console.log(isPerfectSquare(49)); // true
