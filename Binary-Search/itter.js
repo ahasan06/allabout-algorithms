@@ -62,24 +62,5 @@ console.log(binarySearchItterative(array,target));
 
 */
 
-low = 0 ;
-high = array.length - 1 // 9
-
-while(0 <= 9) condition is true excute the 1st itteration
-
-mid  = 0 + 9 / 2
-mid = 4
-
-check 1st condition 
-if (array[mid] === target)
-array[4] contain 14 which is not equal to target
-not execute
-
-check 2nd condition
-else if (array[mid] < target)
-array[4] contain 14 which is less then the target 25
-consdition true excute
-
-set low  = mid + 1
 
 
