@@ -8,7 +8,6 @@ var lengthOfLongestSubstring = function(s) {
        if (maxCount) {
         
        }
-       
         
     }
     
