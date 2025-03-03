@@ -33,18 +33,17 @@ function isValid(s) {
         '{':'}',
         '[':']',
     }
+    
     for (const char of s) {
-        console.log(map[char]);
-        
+       
        if (map[char]) {
-        stack.push(char)
+          stack.push(char)
        }
        else{
-        console.log(char);
-        console.log(map[stack.pop()]);
+
+        
         if (stack.isEmpty()|| map[stack.pop()]!==char) {
-           
-            
+        
             return false
         }
        }
@@ -55,8 +54,8 @@ function isValid(s) {
 
 
 // Test cases
-console.log(isValid("()")); // true
+// console.log(isValid("()")); // true
 // console.log(isValid("()[]{}")); // true
 // console.log(isValid("(]")); // false
-// console.log(isValid("([])")); // true
+console.log(isValid("([])")); // true
 // console.log(isValid("([)]")); // false

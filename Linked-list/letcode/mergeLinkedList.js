@@ -54,7 +54,7 @@ let list2 = createLinkedList([1, 3, 4]);
 
 let mergedList = mergeTwoLists(list1, list2);
 
-console.log( JSON.stringify() mergedList);
+console.log(JSON.stringify(mergedList));
 
 
 
